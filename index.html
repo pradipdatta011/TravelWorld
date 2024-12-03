@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">        
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>TravelWorld</title>
+</head>
+<body class="bg-gray-50">
+
+  <!-- Navigation Bar -->
+  <nav class="bg-teal-600 shadow-inner w-full z-10" style="background-image: url(image/menu_img.jpg);">
+    <div class="container mx-auto flex justify-between items-center py-4 px-6">
+      <!-- Logo -->
+      <div>
+        <img class="rounded-2xl " src="image/logo.png" alt="Logo">   
+        <a href="#" class="text-2xl font-bold text-white"></a> 
+      </div><a href="#" class="text-2xl font-bold text-white"></a> 
+
+      <!-- Desktop Menu -->
+      <div class="hidden md:flex space-x-10">
+        <a href="#" class="text-black font-bold text-xl hover:text-white">Home</a>
+        <a href="#" class="text-black font-bold text-xl hover:text-white">Destinations</a>
+        <a href="#" class="text-black font-bold text-xl hover:text-white">Tours</a>
+        <a href="#" class="text-black font-bold text-xl hover:text-white">Blog</a>
+        <a href="#" class="text-black font-bold text-xl hover:text-white">Contact</a>
+      </div>
+
+      <!-- Call-to-Action Button -->
+      <a href="#book" class="hidden md:inline-block bg-yellow-700 text-white px-4 py-2 rounded-md hover:bg-teal-600">Book Now</a>
+
+      <!-- Mobile Menu Button -->
+      <button id="menu-toggle" class="md:hidden text-gray-700 focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-gray-100">
+      <a href="#" class="block px-4 py-2 font-bold text-black hover:text-teal-600">Home</a>
+      <a href="#" class="block px-4 py-2 font-bold text-black hover:text-teal-600">Destinations</a>
+      <a href="#" class="block px-4 py-2 font-bold text-black hover:text-teal-600">Tours</a>
+      <a href="#" class="block px-4 py-2 font-bold text-black hover:text-teal-600">Blog</a>
+      <a href="#" class="block px-4 py-2 font-bold text-black hover:text-teal-600">Contact</a>
+      <a href="#book" class="block px-4 py-2 bg-teal-600 text-white text-center rounded-md mt-2 hover:bg-teal-700">Book Now</a>
+    </div>
+  </nav>
+
+   <!-- Hero Section -->
+   <title>TravelWorld Hero Section</title>
+    <style>
+     /* Additional Styling for Smooth Animation */
+     .fade-in-out {
+       opacity: 0;
+       animation: fadeInOut 3s infinite;
+     }
+ 
+     @keyframes fadeInOut {
+       0%, 100% {
+         opacity: 0;
+       }
+       50% {
+         opacity: 1;
+       }
+     }
+   </style>
+ 
+     <body class="bg-gray-50 text-gray-800">
+ 
+         <!-- Hero Section -->
+         <section class="bg-cover bg-center h-[700px] flex items-center justify-center text-center" style="background-image: url('image/hero_finalimage.gif');">
+          <div class="text-white text-center pb-80">
+           <h1 id="animated-title" class="text-5xl font-bold mb-4">Welcome to TravelWorld</h1>
+           <p class="text-xl mb-6">Find your next adventure with us.</p>
+           <button class="bg-yellow-700 px-6 py-3 rounded-xl text-white font-bold hover:bg-teal-700">Discover More</button>
+     </div>
+   </section>
+ 
+ 
+
+  <!-- Popular Destinations -->
+
+   <div class="container mx-auto px-4 py-8">
+    <h1 class="text-3xl font-bold text-center mb-8 hover:text-yellow-800">Popular Destinations</h1>
+    <!-- Grid Container -->
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+      <!-- Grid Item -->
+      <div class="group relative overflow-hidden rounded-lg shadow-lg">
+        <img src="image/dubai.png" alt="Dubai" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <p class="text-white font-bold text-4xl">Explore...</p>
+        </div>
+      </div>
+      <!-- Repeat for more items -->
+      <div class="group relative overflow-hidden rounded-lg shadow-lg">
+        <img src="image/maldives.png" alt="Maldives" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <p class="text-white font-bold text-4xl">Explore...</p>
+        </div>
+      </div>
+      <div class="group relative overflow-hidden rounded-lg shadow-lg">
+        <img src="image/singapur.png" alt="Singapur" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <p class="text-white font-bold text-4xl">Explore...</p>
+        </div>
+      </div>
+      <div class="group relative overflow-hidden rounded-lg shadow-lg">
+        <img src="image/india.png" alt="India" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <p class="text-white font-bold text-4xl">Explore...</p>
+        </div>
+      </div>
+     </div>
+    </div>
+
+
+  <!-- Features Tours (Card Layout Image Gallery) -->
+  <section class="py-16">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-12 hover:text-yellow-800">Features Tours</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <!-- Card 1 -->
+        <div class="bg-white group relative overflow-hidden rounded-lg shadow-lg">
+          <img src="image/paris.png" alt="Destination" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110">
+          <div class="p-4">
+            <h3 class="font-bold text-2xl hover:text-yellow-600">Paris</h3>
+            <p class="text-gray-600 font-bold hover:text-yellow-600">The city of lights and love.</p>
+            <p class="text-gray-600 font-bold hover:text-yellow-600">Price Per Person:[4N/5D] Starting Price $1700.00</p>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="bg-white group relative overflow-hidden rounded-lg shadow-lg">
+          <img src="image/bali.png" alt="Destination" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110">
+          <div class="p-4">
+            <h3 class="font-bold text-2xl hover:text-yellow-600">Bali</h3>
+            <p class="text-gray-600 font-bold hover:text-yellow-600">Tropical paradise with stunning beaches.</p>
+            <p class="text-gray-600 font-bold hover:text-yellow-600">Price Per Person: [5N/6D] Starting Price $1300.00</p>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="bg-white group relative overflow-hidden rounded-lg shadow-lg">
+          <img src="image/tokyo.png" alt="Destination" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110">
+          <div class="p-4">
+            <h3 class="font-bold text-2xl hover:text-yellow-600">Tokyo</h3>
+            <p class="text-gray-600 font-bold hover:text-yellow-600">A perfect blend of tradition and technology.</p>
+            <p class="text-gray-600  font-bold hover:text-yellow-600">Price Per Person: [4N/5D] Starting Price $1500.00</p>
+          </div>
+        </div>
+        <!-- Add more cards as needed -->
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Gallery -->
+  <section class="py-16 bg-teal-600" style="background-image: url(image/for_gallaryimg.gif);">
+    <div class="container mx-auto">
+      <h2 class="text-5xl font-bold text-center text-white mb-12 hover:text-pink-900">Gallery</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <!-- Image 1 -->
+        <div class="relative group">
+          <img src="image/beach_1.png" alt="Gallery Image" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-teal-600 bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center text-pink-900 text-6xl font-bold transition">Beach</div>
+        </div>
+        <!-- Image 2 -->
+        <div class="relative group">
+          <img src="image/mountain_2.png" alt="Gallery Image" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-teal-600 bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center text-pink-900 text-5xl font-bold transition">Mountain</div>
+        </div>
+        <!-- Image 3 -->
+        <div class="relative group">
+          <img src="image/forest_3.png" alt="Gallery Image" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-teal-600 bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center text-pink-900 text-6xl font-bold transition">Forest</div>
+        </div>
+        <!-- Image 4 -->
+        <div class="relative group">
+          <img src="image/city_4.png" alt="Gallery Image" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-teal-600 bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center text-pink-900 text-6xl font-bold transition">City</div>
+        </div>
+        <!-- Add more images as needed -->
+      </div>
+    </div>
+   </section>
+
+
+    <!-- Client Reviews Section -->
+  <section class="py-16 bg-gray-100"  style="background-image: url(image/clientreviw_bg.gif);">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center text-gray-800 mb-8 hover:text-pink-900">What Our Clients Say</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Review 1 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <div class="flex items-center mb-4">
+            <img class="w-14 h-14 rounded-full border-2 border-teal-500" src="image/client-1.png" alt="Client Photo">
+            <div class="ml-4">
+              <h4 class="text-3xl font-bold text-gray-800 hover:text-yellow-600">John Doe</h4>
+              <p class="text-xl text-gray-500 hover:text-yellow-600">Travel Enthusiast</p>
+            </div>
+          </div>
+          <p class="text-gray-600">
+            "TravelWorld made my dream vacation a reality! The team was incredibly professional and ensured every detail was perfect."
+          </p>
+          <div class="mt-4">
+            <span class="inline-block text-teal-500 text-xl">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <div class="flex items-center mb-4">
+            <img class="w-14 h-14 rounded-full border-2 border-teal-500" src="image/client-2.png" alt="Client Photo">
+            <div class="ml-4">
+              <h4 class="text-3xl font-bold text-gray-800 hover:text-yellow-600">Jane Smith</h4>
+              <p class="text-xl text-gray-500  hover:text-yellow-600">Frequent Traveler</p>
+            </div>
+          </div>
+          <p class="text-gray-600">
+            "An unforgettable experience! The tours and accommodations arranged by TravelWorld exceeded all my expectations."
+          </p>
+          <div class="mt-4">
+            <span class="inline-block text-teal-500 text-xl">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <div class="flex items-center mb-4">
+            <img class="w-14 h-14 rounded-full border-2 border-teal-500" src="image/client-3.png" alt="Client Photo">
+            <div class="ml-4">
+              <h4 class="text-3xl font-bold text-gray-800 hover:text-yellow-600">Samuel Green</h4>
+              <p class="text-xl text-gray-500 hover:text-yellow-600">Adventure Seeker</p>
+            </div>
+          </div>
+          <p class="text-gray-600">
+            "TravelWorld planned the best adventure trip I’ve ever had. Highly recommend their service to anyone!"
+          </p>
+          <div class="mt-4">
+            <span class="inline-block text-teal-500 text-xl">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+   <!-- Newsletter Section -->
+   <section class="py-16 bg-teal-600 text-white" style="background-image: url(image/newsletter_img.gif);">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-4  hover:text-yellow-800">Stay Updated with Travel Deals</h2>
+      <p class="text-lg mb-6  hover:text-yellow-800">Subscribe to our newsletter for exclusive offers and travel tips.</p>
+      <form class="flex justify-center">
+        <input type="email" placeholder="Enter your email" 
+               class="w-2/3 sm:w-1/2 px-4 py-2 rounded-l-md text-gray-800 border border-gray-300 focus:outline-none">
+        <button class="bg-white text-teal-600 px-6 py-2 rounded-r-md hover:bg-gray-100">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+
+  <!-- Footer Section -->
+  <footer class="bg-gray-800 text-white py-12">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+      <!-- About Us -->
+      <div>
+        <h3 class="font-bold text-lg mb-4">About Us</h3>
+        <p>Your trusted travel companion since 2021. Explore the world with us!</p>
+      </div>
+      <!-- Quick Links -->
+      <div>
+        <h3 class="font-bold text-lg mb-4">Quick Links</h3>
+        <ul>
+          <li><a href="#" class="hover:text-teal-400">Home</a></li>
+          <li><a href="#" class="hover:text-teal-400">Destinations</a></li>
+          <li><a href="#" class="hover:text-teal-400">Tours</a></li>
+          <li><a href="#" class="hover:text-teal-400">Blog</a></li>
+          <li><a href="#" class="hover:text-teal-400">Contact</a></li>
+        </ul>
+      </div>
+
+
+
+      <!-- Contact -->
+      <div>
+        <h3 class="font-bold text-lg mb-4">Contact</h3>
+        <p>Email: info@travelworld.com</p>
+        <p>Phone: +123 456 7890</p>
+        <div class="flex space-x-4 mt-4">
+          <a href="#" class="hover:text-teal-400">Facebook</a>
+          <a href="#" class="hover:text-teal-400">Instagram</a>
+          <a href="#" class="hover:text-teal-400">Twitter</a>
+        </div>
+      </div>
+
+
+      <!-- Newsletter -->
+      <div>
+        <h3 class="font-bold text-lg mb-4">Newsletter</h3>
+        <form>
+          <input type="email" placeholder="Enter your email" 
+                 class="w-full px-4 py-2 mb-4 rounded-md text-gray-800 border border-gray-300 focus:outline-none">
+          <button class="bg-teal-600 text-white px-4 py-2 rounded-md hover:bg-teal-700 w-full">Subscribe</button>
+        </form>
+      </div>
+    </div>
+
+
+     <!-- Facebook -->
+
+    <section class="social-media-links text-center mt-6">
+    
+      <div class="flex justify-center space-x-4">
+        <!-- Facebook -->
+        <a href="https://www.facebook.com/your-page" target="_blank" rel="noopener noreferrer">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" 
+               alt="Facebook" 
+               class="w-8 h-8">
+        </a>
+    
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/your-profile" target="_blank" rel="noopener noreferrer">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" 
+               alt="Instagram" 
+               class="w-8 h-8">
+        </a>
+    
+   
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" 
+               alt="LinkedIn" 
+               class="w-8 h-8">
+        </a>
+      </div>
+    </section>
+
+
+    <div class="mt-8 text-center text-sm text-gray-400">
+      &copy; 2024 TravelWorld. All Rights Reserved.
+    </div>  
+
+  </footer>
+
+
+  <!-- Script Section -->
+
+  <!-- Mobile Menu -->
+  <script>
+    // Toggle Mobile Menu
+    const menuToggle = document.getElementById("menu-toggle");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    menuToggle.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+  </script> 
+
+
+  <!-- Hero Section Title Animation -->
+
+  <script>
+    // JavaScript for Dynamic Title Animation with Colors
+    const titles = [
+      { text: "Explore New Horizons", color: "text-blue-800" },
+      { text: "Find Your Next Adventure", color: "text-yellow-600" },
+      { text: "Travel Beyond Borders", color: "text-white" },
+      { text: "Discover Hidden Gems", color: "text-black" }
+    ];
+
+    const titleElement = document.getElementById("animated-title");
+    let currentIndex = 0;
+
+    function updateTitle() {
+      const current = titles[currentIndex];
+      titleElement.textContent = current.text;
+
+      // Remove previous color classes
+      titles.forEach(({ color }) => titleElement.classList.remove(color));
+
+      // Add the new color class
+      titleElement.classList.add(current.color);
+
+      currentIndex = (currentIndex + 1) % titles.length; // Cycle through titles
+    }
+
+    setInterval(updateTitle, 4000); // Update title every 4 seconds
+  </script>
+
+
+</body>
+</html>
